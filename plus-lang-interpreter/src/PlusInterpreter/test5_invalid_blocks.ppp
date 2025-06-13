@@ -1,0 +1,10 @@
+number x;
+{
+}
+
+repeat 1 times {
+    x := 1;
+}
+
+repeat 1 times
+    x := 1;

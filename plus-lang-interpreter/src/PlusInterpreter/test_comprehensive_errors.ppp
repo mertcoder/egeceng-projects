@@ -1,0 +1,9 @@
+*Test 6: Comprehensive Error Detection*
+*This file should produce an error on the first error encountered*
+
+*Valid setup*
+number x;
+x := 10;
+
+*ERROR: The following line should cause an undeclared variable error*
+y := 5; 

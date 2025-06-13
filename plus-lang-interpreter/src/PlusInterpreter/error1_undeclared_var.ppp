@@ -1,0 +1,4 @@
+*Error Test 1: Undeclared Variable*
+number x;
+x := 10;
+y := 5; *ERROR: y not declared* 

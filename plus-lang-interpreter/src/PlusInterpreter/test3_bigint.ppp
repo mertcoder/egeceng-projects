@@ -1,0 +1,51 @@
+*Test 3: Big Integer Comprehensive Test*
+*Big integer support, arithmetic operations, edge cases, maximum size validation*
+
+number big1;
+number big2;
+number result;
+number huge_max;
+
+*1. Large positive and negative numbers*
+big1 := 12345678901234567890123456789012345678901234567890;
+big2 := -98765432109876543210987654321098765432109876543210;
+write "Big positive: " and big1 and newline;
+write "Big negative: " and big2 and newline;
+
+*2. Maximum size number (close to 100 digits)*
+huge_max := 1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890;
+write "Huge number (98 digits): " and huge_max and newline;
+
+*3. Big integer arithmetic operations*
+result := big1;
+result += 1000000000000000000000000000000000000000000000000;
+write "After addition: " and result and newline;
+
+result -= 500000000000000000000000000000000000000000000000;
+write "After subtraction: " and result and newline;
+
+*4. Operations with negative big integers*
+result := big1;
+result += big2;
+write "big1 + big2: " and result and newline;
+
+result := big1;
+result -= big2;
+write "big1 - big2: " and result and newline;
+
+*5. Zero operations with big integers*
+number zero_big;
+zero_big := 0;
+zero_big += huge_max;
+write "0 + huge_number: " and zero_big and newline;
+
+zero_big -= huge_max;
+write "After subtracting back: " and zero_big and newline;
+
+*6. Single digit with big integer*
+number single;
+single := 7;
+single += huge_max;
+write "7 + huge_number: " and single and newline;
+
+write "Test 3 completed successfully!" and newline; 

@@ -1,0 +1,2 @@
+*Error Test 3: Negative Loop Count*
+repeat -5 times write "ERROR"; *ERROR: negative loop count* 

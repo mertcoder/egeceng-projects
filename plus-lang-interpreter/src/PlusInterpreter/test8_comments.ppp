@@ -1,0 +1,40 @@
+*Test 5: Comment Syntax Comprehensive Test*
+*Single-line, multi-line, inline, nested comment scenarios*
+
+*This is a single line comment*
+
+number x; *inline comment here*
+
+*
+This is a multi-line comment
+that spans several lines
+and should be completely ignored
+by the interpreter
+*
+
+x := 42; *another inline comment*
+
+*Another single line comment*
+
+*
+Multi-line comment with special characters:
+!@#$%^&*()_+-={}[]|\\:;'<>,.?/
+Should all be ignored
+*
+
+write "Comments test: x = " and x and newline;
+
+*Testing comment at different positions*
+number y; *comment after declaration*
+y := 100; *comment after assignment*
+y += 50; *comment after increment*
+write "y = " and y and newline; *comment after write*
+
+*
+Final multi-line comment
+to test complete functionality
+*
+
+write "Test 5 completed successfully!" and newline;
+
+*Final comment at the end of file* 

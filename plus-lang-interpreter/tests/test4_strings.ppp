@@ -1,0 +1,44 @@
+*Test 4: I/O and String Operations*
+*Write statements, string constants, newline keyword, mixed output*
+
+number num1;
+number num2;
+num1 := 42;
+num2 := -999;
+
+*1. Basic string output*
+write "Basic string test" and newline;
+
+*2. Empty string and special cases*
+write "Empty string test: |" and "" and "|" and newline;
+write "String with spaces: |" and "  hello world  " and "|" and newline;
+
+*3. Special characters in strings*
+write "Special chars: " and "!@#$%^&*()_+-={}[]|\\:;'<>,.?/" and newline;
+
+*4. Mixed output with numbers and strings*
+write "Number 1: " and num1 and ", Number 2: " and num2 and newline;
+write "Mix: " and "Value=" and num1 and " and " and "Result=" and num2 and newline;
+
+*5. Multiple newlines and formatting*
+write "Line 1" and newline and "Line 2" and newline and "Line 3" and newline;
+
+*6. Write statement with constants*
+write "Constants: " and 123 and " and " and -456 and " and " and 0 and newline;
+
+*7. Long string test*
+write "This is a very long string that demonstrates the Plus++ language can handle lengthy string constants without any issues." and newline;
+
+*8. Complex mixed output*
+write "Complex: " and num1 and " + " and num2 and " = ";
+num1 += num2;
+write num1 and newline;
+
+*9. String concatenation with 'and'*
+write "Part1" and " " and "Part2" and " " and "Part3" and " " and "End" and newline;
+
+*10. Edge case: only newline*
+write newline;
+write "After blank line" and newline;
+
+write "Test 4 completed successfully!" and newline; 

@@ -1,0 +1,30 @@
+*Test 1: Basic Language Features*
+*Variable declarations, assignments, arithmetic operations, number validation*
+
+*1. Variable declarations*
+number x;
+number var_underscore;
+number a123;
+
+*2. Number format validation*
+x := 0;
+var_underscore := 123;
+a123 := -456;
+
+*3. Assignment operations*
+x := var_underscore;
+var_underscore := a123;
+
+*4. Increment/Decrement operations*
+x += 10;
+x -= 5;
+var_underscore += 100;
+var_underscore -= x;
+
+*5. Results*
+write "Basic operations test:" and newline;
+write "x = " and x and newline;
+write "var_underscore = " and var_underscore and newline;
+write "a123 = " and a123 and newline;
+
+write "Test 1 completed successfully!" and newline; 

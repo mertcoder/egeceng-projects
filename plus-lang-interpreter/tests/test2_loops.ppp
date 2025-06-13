@@ -1,0 +1,53 @@
+*Test 2: Comprehensive Loop Operations*
+*Constant loops, variable loops, countdown behavior, nested loops, edge cases*
+
+*1. Constant loops*
+write "Constant loop test (5 times): ";
+repeat 5 times write "*";
+write newline;
+
+*2. Variable loop with countdown behavior*
+number countdown;
+countdown := 4;
+write "Variable countdown (should show 4,3,2,1):" and newline;
+repeat countdown times {
+    write "  countdown = " and countdown and newline;
+}
+write "After loop: countdown = " and countdown and newline;
+
+*3. Nested loops*
+number outer;
+number total;
+outer := 3;
+total := 0;
+write "Nested loops test:" and newline;
+repeat outer times {
+    write "Outer loop: " and outer and newline;
+    repeat 2 times {
+        write "  Inner iteration" and newline;
+        total += 1;
+    }
+}
+write "Total inner iterations: " and total and newline;
+
+*4. Edge cases*
+write "Zero loop test:" and newline;
+repeat 0 times write "Should not appear";
+write "Zero loop completed." and newline;
+
+write "Single iteration test:" and newline;
+repeat 1 times write "Single iteration" and newline;
+
+*5. Variable loop modification during execution*
+number loop_var;
+number sum;
+loop_var := 3;
+sum := 0;
+write "Loop with arithmetic during execution:" and newline;
+repeat loop_var times {
+    write "  loop_var = " and loop_var and newline;
+    sum += loop_var;
+}
+write "Final sum: " and sum and newline;
+
+write "Test 2 completed successfully!" and newline; 
