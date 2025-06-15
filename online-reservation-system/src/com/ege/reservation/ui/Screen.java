@@ -27,14 +27,6 @@ public abstract class Screen extends JFrame {
         setLocationRelativeTo(null);
         setResizable(true);
 
-        // Set look and feel
-        try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
-            // If system look and feel fails, use default
-        }
-
-        // Handle window closing
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -109,7 +101,7 @@ public abstract class Screen extends JFrame {
         footerPanel.setPreferredSize(new Dimension(WINDOW_WIDTH, 40));
         footerPanel.setBorder(BorderFactory.createEmptyBorder(8, 20, 8, 20));
 
-        JLabel footerLabel = new JLabel("© 2024 EGE University - Reservation System");
+        JLabel footerLabel = new JLabel("© 2025 EGE University - AOOP Reservation Project");
         footerLabel.setForeground(new Color(52, 73, 94));
         footerLabel.setFont(new Font("Arial", Font.PLAIN, 12));
 

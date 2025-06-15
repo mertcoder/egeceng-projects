@@ -146,11 +146,11 @@ public class UserAccountScreen extends Screen {
         
         // Edit Profile button (placeholder)
         JButton editButton = createActionButton("Edit Profile", new Color(52, 152, 219), "✏️");
-        editButton.addActionListener(e -> showWarningMessage("Profile editing feature will be available in future updates."));
+        editButton.addActionListener(e -> showWarningMessage("Profile editing feature is not implemented."));
         
         // Change Password button (placeholder)
         JButton passwordButton = createActionButton("Change Password", new Color(155, 89, 182), "🔒");
-        passwordButton.addActionListener(e -> showWarningMessage("Password change feature will be available in future updates."));
+        passwordButton.addActionListener(e -> showWarningMessage("Password change feature is not implemented.."));
         
         // Back to Main Menu button
         JButton backButton = createActionButton("Back to Main Menu", new Color(108, 117, 125), "⬅");
