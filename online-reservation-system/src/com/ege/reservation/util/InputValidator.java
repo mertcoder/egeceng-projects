@@ -18,7 +18,6 @@ public class InputValidator {
         return username != null && username.trim().length() >= 3;
     }
 
-    // İstersen e-mail, isim, koltuk ID kontrolü gibi diğer validasyonları da ekleyebilirsin
     public static boolean isValidEmail(String email) {
         return email != null && email.contains("@") && email.contains(".");
     }

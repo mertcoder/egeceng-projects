@@ -12,8 +12,8 @@ import java.awt.event.WindowEvent;
  */
 public abstract class Screen extends JFrame {
     protected final UIFactory uiFactory;
-    protected final int WINDOW_WIDTH = 800;
-    protected final int WINDOW_HEIGHT = 600;
+    protected final int WINDOW_WIDTH = 1200;
+    protected final int WINDOW_HEIGHT = 750;
 
     public Screen(UIFactory uiFactory) {
         this.uiFactory = uiFactory;
@@ -22,10 +22,11 @@ public abstract class Screen extends JFrame {
 
     private void initializeFrame() {
         // Set window properties
-        setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
+        setSize(WINDOW_WIDTH,WINDOW_HEIGHT);
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(true);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
 
         addWindowListener(new WindowAdapter() {
             @Override

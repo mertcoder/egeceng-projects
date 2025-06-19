@@ -11,9 +11,7 @@ Unit tests for TransportFactory
  Testing Factory Pattern implementation
  */
 class TransportFactoryTest {
-
     private TransportFactory transportFactory;
-
     @BeforeEach
     void setUp() {
         transportFactory = new TransportFactory();

@@ -16,7 +16,6 @@ public class DataStore implements UserDao {
 
     private static DataStore instance;
 
-    // Data, com.ege.reservation.data, com.ege.reservation.data
     private final Map<String, User> users;
     private final Map<String, Transport> transports;
     private final Map<String, Voyage> voyages;
